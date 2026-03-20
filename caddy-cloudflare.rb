@@ -7,7 +7,6 @@ class CaddyCloudflare < Formula
   head "https://github.com/caddyserver/caddy.git", branch: "master"
 
   depends_on "go" => :build
-  depends_on "xcaddy" => :build
 
   # xcaddy resource — pinned so we don't depend on a separate formula
   resource "xcaddy" do
