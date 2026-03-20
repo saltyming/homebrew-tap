@@ -2,7 +2,7 @@ class CaddyCloudflare < Formula
   desc "Fast, multi-platform web server with automatic HTTPS and Cloudflare DNS plugin"
   homepage "https://caddyserver.com/"
   url "https://github.com/caddyserver/caddy/archive/refs/tags/v2.11.2.tar.gz"
-  sha256 :no_check
+  sha256 "ee12f7b5f97308708de5067deebb3d3322fc24f6d54f906a47a0a4e8db799122"
   license "Apache-2.0"
   head "https://github.com/caddyserver/caddy.git", branch: "master"
 
@@ -11,7 +11,7 @@ class CaddyCloudflare < Formula
   # xcaddy resource — pinned so we don't depend on a separate formula
   resource "xcaddy" do
     url "https://github.com/caddyserver/xcaddy/archive/refs/tags/v0.4.4.tar.gz"
-    sha256 :no_check
+    sha256 "5ba32eec2388638cebbe1df861ea223c35074528af6a0424f07e436f07adce72"
   end
 
   def install
