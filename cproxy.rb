@@ -12,8 +12,7 @@ class Cproxy < Formula
 
   def install
     ldflags = ["-s", "-w", "-X", "github.com/saltyming/cproxy/internal/version.Value=v#{version}"]
-    system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/cproxy"
-    bin.install "cproxy" => "cproxy"
+    system "go", "build", *std_go_args(output: bin/"cproxy", ldflags: ldflags), "./cmd/cproxy"
   end
 
   test do
