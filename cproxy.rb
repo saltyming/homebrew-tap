@@ -1,8 +1,8 @@
 class Cproxy < Formula
   desc "One CLI to switch between Claude Code providers instantly"
   homepage "https://github.com/saltyming/cproxy"
-  url "https://github.com/saltyming/cproxy/archive/refs/tags/v3.1.0.tar.gz"
-  sha256 "0ba4c2576cdcb734d25835d891c395ae9563b2d31bec4d5a41e30a2ebe0615f2"
+  url "https://github.com/saltyming/cproxy/archive/refs/tags/v3.1.1.tar.gz"
+  sha256 "5220c1f184d31462afb1cd16e847cbc3c17d3c95edad152e648616ff7c73a9fe"
   license "MIT"
   head "https://github.com/saltyming/cproxy.git", branch: "main"
 
