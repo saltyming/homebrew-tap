@@ -11,7 +11,7 @@ class Cproxy < Formula
   conflicts_with "clother", because: "cproxy is a personal fork of clother; install only one"
 
   def install
-    ldflags = ["-s", "-w", "-X", "github.com/saltyming/cproxy/internal/version.Value=v#{version}"]
+    ldflags = ["-s", "-w", "-X", "github.com/saltyming/cproxy/internal/version.Value=#{version}"]
     system "go", "build", *std_go_args(output: bin/"cproxy", ldflags: ldflags), "./cmd/cproxy"
   end
 
